@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\StaffWizard;
-use App\Http\Livewire\svg;
+use App\Http\Livewire\Svg;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +21,4 @@ Route::get('/', function () {
 
 Route::get('staff/wizard', StaffWizard::class)->name('wizard');
 
-Route::get('staff/svg/{id}', svg::class)->name('svg');
+Route::get('staff/svg/{id}', Svg::class)->name('svg');
